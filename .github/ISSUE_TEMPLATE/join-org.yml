@@ -1,6 +1,6 @@
 name: Join AIFrontiersLab GitHub Org
 description: Request an invite to the AIFrontiersLab organization
-title: "Please fill in the GitHub username field below and click the Create button to submit your request."
+title: "Hello AIFrontier, Please fill in the GitHub username field below and click the Create button to submit your request."
 labels: ["org-invite"]
 body:
   - type: input
