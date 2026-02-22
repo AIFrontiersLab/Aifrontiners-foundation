@@ -15,7 +15,7 @@ jobs:
       - name: Extract username from issue body
         id: parse
         run: |
-          USERNAME=$(python3 - <<'PY'
+          USERNAME=$(sed 's/^[[:space:]]*//' <<'PY' | python3
           import re, os
           body = os.environ["BODY"]
           # GitHub form renders as **Label** or ### Label then value on next line(s)
