@@ -1,0 +1,43 @@
+name: Join AIFrontiersLab GitHub Org
+description: Request an invite to the AIFrontiersLab organization
+title: "Join request: @<your-username>"
+labels: ["org-invite"]
+body:
+  - type: input
+    id: github
+    attributes:
+      label: GitHub username
+      description: Your GitHub handle (e.g., octocat)
+      placeholder: octocat
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Email (optional)
+      description: Only if you prefer email invite (leave blank otherwise)
+      placeholder: name@example.com
+    validations:
+      required: false
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: What do you want to do?
+      options:
+        - Contribute code
+        - Documentation
+        - Research / papers
+        - Product / design
+        - Community / events
+    validations:
+      required: true
+
+  - type: textarea
+    id: note
+    attributes:
+      label: Short note (optional)
+      description: Anything you want us to know
+    validations:
+      required: false
